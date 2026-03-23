@@ -22,48 +22,106 @@ td{font-size:14px}
 .badge-green{background:#dcfce7;color:#16a34a}
 .badge-red{background:#fee2e2;color:#dc2626}
 .badge-yellow{background:#fef3c7;color:#d97706}
-.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:15px;margin-bottom:20px}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:15px;margin-bottom:20px}
 .summary-card{background:linear-gradient(135deg,#667eea,#764ba2);color:white;padding:20px;border-radius:12px;text-align:center}
-.summary-card .value{font-size:28px;font-weight:bold}
+.summary-card .value{font-size:24px;font-weight:bold}
 .summary-card .label{font-size:12px;opacity:0.9;margin-top:5px}
 </style>
 </head>
 <body>
 <div class="container">
 <h1>📊 股票信号监控</h1>
-<p class="update-time">最后更新：2025-03-22 22:15</p>
+<p class="update-time">最后更新：2026-03-23 18:37</p>
 <div class="summary">
 <div class="summary-card"><div class="value">5</div><div class="label">持仓数量</div></div>
-<div class="summary-card"><div class="value red">-6236元</div><div class="label">总盈亏</div></div>
+<div class="summary-card"><div class="value red" style="font-size:20px">-11493元</div><div class="label">总盈亏</div></div>
 <div class="summary-card"><div class="value">0</div><div class="label">买入信号</div></div>
-<div class="summary-card"><div class="value">2</div><div class="label">关注信号</div></div>
+<div class="summary-card"><div class="value">4</div><div class="label">关注信号</div></div>
 </div>
 <div class="section">
 <h2>💰 持仓盈亏</h2>
 <table><thead><tr><th>股票</th><th>现价</th><th>成本</th><th>盈亏</th><th>评级</th></tr></thead>
-<tbody>
-<tr><td><b>金风科技</b><br><span style="color:#999;font-size:12px">002202</span></td><td>9.67</td><td>31.895</td><td class="red">-69.64%</td><td><span class="badge badge-red">等待</span></td></tr>
-<tr><td><b>西藏珠峰</b><br><span style="color:#999;font-size:12px">600338</span></td><td>10.50</td><td>28.489</td><td class="red">-63.13%</td><td><span class="badge badge-red">等待</span></td></tr>
-<tr><td><b>北斗星通</b><br><span style="color:#999;font-size:12px">002151</span></td><td>25.80</td><td>58.021</td><td class="red">-55.54%</td><td><span class="badge badge-red">等待</span></td></tr>
-<tr><td><b>航天电子</b><br><span style="color:#999;font-size:12px">600879</span></td><td>8.50</td><td>42.926</td><td class="red">-80.20%</td><td><span class="badge badge-red">等待</span></td></tr>
-<tr><td><b>航天发展</b><br><span style="color:#999;font-size:12px">000547</span></td><td>9.20</td><td>49.684</td><td class="red">-81.49%</td><td><span class="badge badge-red">等待</span></td></tr>
-</tbody></table>
+<tbody><tr>
+        <td><b>金风科技</b><br><span style="color:#999;font-size:12px">002202</span></td>
+        <td>27.41</td><td>31.895</td>
+        <td class="red">-14.06%<br><span style="font-size:11px">-1345元</span></td>
+        <td><span class="badge badge-yellow">🟡关注</span></td>
+    </tr><tr>
+        <td><b>西藏珠峰</b><br><span style="color:#999;font-size:12px">600338</span></td>
+        <td>14.71</td><td>28.489</td>
+        <td class="red">-48.37%<br><span style="font-size:11px">-1378元</span></td>
+        <td><span class="badge badge-red">🔴等待</span></td>
+    </tr><tr>
+        <td><b>北斗星通</b><br><span style="color:#999;font-size:12px">002151</span></td>
+        <td>37.61</td><td>58.021</td>
+        <td class="red">-35.18%<br><span style="font-size:11px">-2041元</span></td>
+        <td><span class="badge badge-red">🔴等待</span></td>
+    </tr><tr>
+        <td><b>航天电子</b><br><span style="color:#999;font-size:12px">600879</span></td>
+        <td>20.98</td><td>42.926</td>
+        <td class="red">-51.13%<br><span style="font-size:11px">-4389元</span></td>
+        <td><span class="badge badge-red">🔴等待</span></td>
+    </tr><tr>
+        <td><b>航天发展</b><br><span style="color:#999;font-size:12px">000547</span></td>
+        <td>26.29</td><td>49.684</td>
+        <td class="red">-47.09%<br><span style="font-size:11px">-2339元</span></td>
+        <td><span class="badge badge-yellow">🟡关注</span></td>
+    </tr></tbody></table>
 </div>
 <div class="section">
 <h2>👀 自选股信号</h2>
-<table><thead><tr><th>股票</th><th>现价</th><th>评级</th><th>建议</th></tr></thead>
-<tbody>
-<tr><td><b>中国平安</b></td><td>45.20</td><td><span class="badge badge-yellow">关注</span></td><td>观察</td></tr>
-<tr><td><b>比亚迪</b></td><td>280.50</td><td><span class="badge badge-yellow">关注</span></td><td>观察</td></tr>
-<tr><td><b>工商银行</b></td><td>5.80</td><td><span class="badge badge-green">达标</span></td><td>可考虑</td></tr>
-<tr><td><b>隆基绿能</b></td><td>18.50</td><td><span class="badge badge-red">等待</span></td><td>继续观察</td></tr>
-<tr><td><b>海格通信</b></td><td>12.30</td><td><span class="badge badge-red">等待</span></td><td>继续观察</td></tr>
-<tr><td><b>士兰微</b></td><td>28.60</td><td><span class="badge badge-red">等待</span></td><td>继续观察</td></tr>
-<tr><td><b>金风科技</b></td><td>9.67</td><td><span class="badge badge-red">等待</span></td><td>继续观察</td></tr>
-<tr><td><b>西藏珠峰</b></td><td>10.50</td><td><span class="badge badge-red">等待</span></td><td>继续观察</td></tr>
-<tr><td><b>北斗星通</b></td><td>25.80</td><td><span class="badge badge-red">等待</span></td><td>继续观察</td></tr>
-<tr><td><b>航天电子</b></td><td>8.50</td><td><span class="badge badge-red">等待</span></td><td>继续观察</td></tr>
-</tbody></table>
+<table><thead><tr><th>股票</th><th>现价</th><th>评级</th><th>说明</th></tr></thead>
+<tbody><tr>
+        <td><b>中国平安</b><br><span style="color:#999;font-size:12px">601318</span></td>
+        <td>57.47</td>
+        <td><span class="badge badge-red">🔴等待</span></td>
+        <td style="color:#666;font-size:12px">等待信号</td>
+    </tr><tr>
+        <td><b>比亚迪</b><br><span style="color:#999;font-size:12px">002594</span></td>
+        <td>107.63</td>
+        <td><span class="badge badge-yellow">🟡关注</span></td>
+        <td style="color:#666;font-size:12px">部分条件满足</td>
+    </tr><tr>
+        <td><b>工商银行</b><br><span style="color:#999;font-size:12px">601398</span></td>
+        <td>7.25</td>
+        <td><span class="badge badge-yellow">🟡关注</span></td>
+        <td style="color:#666;font-size:12px">部分条件满足</td>
+    </tr><tr>
+        <td><b>隆基绿能</b><br><span style="color:#999;font-size:12px">601012</span></td>
+        <td>18.81</td>
+        <td><span class="badge badge-yellow">🟡关注</span></td>
+        <td style="color:#666;font-size:12px">部分条件满足</td>
+    </tr><tr>
+        <td><b>海格通信</b><br><span style="color:#999;font-size:12px">002465</span></td>
+        <td>14.05</td>
+        <td><span class="badge badge-red">🔴等待</span></td>
+        <td style="color:#666;font-size:12px">等待信号</td>
+    </tr><tr>
+        <td><b>士兰微</b><br><span style="color:#999;font-size:12px">600460</span></td>
+        <td>25.85</td>
+        <td><span class="badge badge-red">🔴等待</span></td>
+        <td style="color:#666;font-size:12px">等待信号</td>
+    </tr><tr>
+        <td><b>金风科技</b><br><span style="color:#999;font-size:12px">002202</span></td>
+        <td>27.41</td>
+        <td><span class="badge badge-yellow">🟡关注</span></td>
+        <td style="color:#666;font-size:12px">部分条件满足</td>
+    </tr><tr>
+        <td><b>西藏珠峰</b><br><span style="color:#999;font-size:12px">600338</span></td>
+        <td>14.71</td>
+        <td><span class="badge badge-red">🔴等待</span></td>
+        <td style="color:#666;font-size:12px">等待信号</td>
+    </tr><tr>
+        <td><b>北斗星通</b><br><span style="color:#999;font-size:12px">002151</span></td>
+        <td>37.61</td>
+        <td><span class="badge badge-red">🔴等待</span></td>
+        <td style="color:#666;font-size:12px">等待信号</td>
+    </tr><tr>
+        <td><b>航天电子</b><br><span style="color:#999;font-size:12px">600879</span></td>
+        <td>20.98</td>
+        <td><span class="badge badge-red">🔴等待</span></td>
+        <td style="color:#666;font-size:12px">等待信号</td>
+    </tr></tbody></table>
 </div>
 <div class="section">
 <h2>📋 刘琛交易规则</h2>
@@ -73,7 +131,7 @@ td{font-size:14px}
 <li>只做高胜率形态，错了就止损</li>
 <li>只做上升趋势，不抄底、不摸顶</li>
 </ul>
-<p style="margin-top:15px;color:#999;font-size:12px">⚠️ 仅供参考，不构成投资建议</p>
+<p style="margin-top:15px;color:#999;font-size:12px">⚠️ 仅供参考，不构成投资建议。股市有风险，盈亏自负。</p>
 </div>
 </div>
 </body>
